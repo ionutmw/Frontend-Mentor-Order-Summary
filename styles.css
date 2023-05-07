@@ -1,0 +1,152 @@
+body {
+    width: 1440px;
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-color: hsl(225, 100%, 94%);
+    font-family: "Red Hat Display";
+    font-size: 16px;
+}
+
+.card {
+   /* nu reusesc sa aliniez pe centru tot cardul.
+   Am decis sa pun position: relative insa mi-as
+   fi dorit ca atunci cand restrang fereastra
+   sa se restanga sa fie "responsive" */
+    width: 350px;
+    height: 500px;
+    border-radius: 15px 15px 0px 0px;
+    position: relative;
+    top: 50px;
+    left: 545px;
+    background-color: white;
+}
+
+.top {
+    background-color: white;
+    border-radius: 15px;
+}
+
+.top img{
+    width: 350px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+
+.middle {
+    width: 350px;
+    height: 33%;
+    text-align: center;
+    background-color: white;
+    margin-top: none;
+    color: hsl(223, 47%, 23%);
+}
+
+.middle p:nth-child(1){
+    width: 350px;
+    font-weight: 900;
+    font-size: 23px;
+    margin: 0px;
+    padding-top: 30px;
+}
+
+.middle p:nth-child(2){
+    font-weight: 500;
+    font-size: 13px;
+    color: hsl(224, 23%, 55%);
+    /* nu reusesc sa centrez perfect textul
+    asa ca am falosit padding left 30px si
+    padding right 40px. Am incercat cu
+    text align: center sau cu margin */
+    padding-left: 30px;
+    padding-right: 40px;
+}
+
+.annual-plan {
+    background-color: rgb(243, 243, 243);
+    color: hsl(224, 23%, 55%);
+    width: 300px;
+    height: 70px;
+    border-radius: 15px;
+    margin: 0px 25px 0px 25px;
+    font-size: 13px;
+    display: flex;
+    
+       
+}
+
+.annual-plan div{
+    width: 33%;
+    padding-top: 10px;
+}
+
+.annual-plan img{
+    width: 40px;
+    height: 40px;
+    padding-left: 15px;
+    padding-top: 5px;
+}
+
+.annual-plan div:nth-child(2) {
+    /* am vrut sa aproprii mai mult randurile
+    dar nu am stiut cum */
+    display: inline-block;
+    padding: 0px;
+
+}
+
+.annual-plan div:nth-child(3) {
+   text-align: right;
+   padding-right: 20px;
+}
+
+.annual-plan-p{
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+}
+
+.bottom {
+    background-color: white;
+    display:inline-block;
+    padding: 25px;
+    border-radius: 0px 0px 15px 15px;
+    
+}
+
+.bottom .submit{
+    background-color: rgb(59, 59, 233);
+    color: white;
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    box-shadow: 0px 15px 11px -15px rgb(89, 103, 144);
+    border: none;
+    font-weight: 600;
+}
+
+.bottom .submit:hover{
+    color:red;
+}
+
+
+.bottom .cancel{
+    color: hsl(224, 23%, 55%);
+    background-color: white;
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border: 0px;
+    cursor: pointer;    
+    font-weight: 600;
+}
+
+.bottom .cancel:hover{
+    background-color: hsl(223, 47%, 23%);
+    color: rgb(255, 255, 255);  
+    box-shadow: 0px 15px 11px -15px rgb(89, 103, 144);
+    border: none;
+}
+
